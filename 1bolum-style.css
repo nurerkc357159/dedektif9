@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+/* .grid-container  {
+  position: relative;
+  z-index: 1;
+}
+
+.grid-container ::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url("pexels-cottonbro-8369517.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.04;
+  z-index: -1;
+} */
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main main main right'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.grid-container>div {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.item1 {
+    grid-area: header;
+    background-color: rgb(250, 242, 250);
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    text-shadow: 4px 5px 3px rgb(3, 26, 34);
+    color: rgb(6, 187, 248);
+
+}
+
+.item1>h1 {
+    font-size: 70px;
+}
+
+/* .item2 {
+    grid-area: menu;
+} */
+
+/* .item2 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.item2 li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #33b5e5;
+    color: #ffffff;
+}
+
+.item2 li:hover {
+    background-color: #0099cc;
+} */
+
+.item3 {
+    grid-area: main;
+    position: relative;
+    z-index: 1;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.item3 ::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url("/fotograflar/dedo-sari.jpeg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.03;
+  z-index: -1;
+}
+
+.item3>h1 {
+    font-size: 30px;
+    margin-bottom: 7px;
+}
+
+.item3>h2 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.item3>p {
+    margin-bottom: 7px;
+}
+
+.item4 {
+    grid-area: right;
+    border: 2px solid #0099cc;
+    background-color: rgb(16, 15, 15);
+    padding: 15px;
+    color: #ece6e6;
+    width:200px;
+
+
+}
+
+.item4>h2 {
+    font-size: 30px;
+    padding-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 2px 2px 3px rgb(200, 224, 225);
+}
+
+.item4 p {
+    padding: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #0fd4d4;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.item5 {
+    grid-area: footer;
+    background-color: #0099cc;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .item1 {
+        grid-area: 1 / span 6;
+    }
+
+    .item2 {
+        grid-area: 2 / span 6;
+    }
+
+    .item3 {
+        grid-area: 3 / span 6;
+    }
+
+    .item4 {
+        grid-area: 4 / span 6;
+    }
+
+    .item5 {
+        grid-area: 5 / span 6;
+    }
+}
+
+a {
+    text-decoration: none;
+    border-bottom: #0099cc;
+    grid-area: header;
+    color: azure;
+    font-size: 20px;
+}
+
+a:hover {
+    color: #0fd4d4;
+    text-shadow: 4px 6px 3px black;
+    font-size: 30px;
+}
+
+/* .item6 {
+    grid-area: main;
+    position: relative;
+    z-index: 1;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.grid-container ::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url("dedo-sarı.jpeg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.03;
+  z-index: -1;
+} */
+
+
+
+
+/* @media only screen and (max-width: 600px) {
+  .item1 {grid-area: 1 / span 6;}
+  .item3 {grid-area: 2 / span 6;}
+  .item4 {grid-area: 3 / span 6;}
+  .item5 {grid-area: 4 / span 6;}
+} */
+
